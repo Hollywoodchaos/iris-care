@@ -22,8 +22,15 @@ Dizes à Iris Care o que tens (a caldeira, o carro, os detetores de fumo, o inve
 ## Instalação
 
 ### Com HACS (recomendado)
-1. HACS → ⋮ → **Repositórios personalizados** → adiciona `https://github.com/Hollywoodchaos/iris-care`, categoria **Integração**.
-2. Descarrega a **Iris Care** e reinicia o Home Assistant.
+
+<p align="center">
+  <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Hollywoodchaos&repository=iris-care&category=integration"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open this repository in HACS"></a>
+</p>
+
+Carrega no botão acima, ou adiciona o repositório à mão: HACS → ⋮ → **Repositórios personalizados** → `https://github.com/Hollywoodchaos/iris-care`, categoria **Integração**. Depois:
+
+1. Descarrega a **Iris Care** no HACS.
+2. Reinicia o Home Assistant.
 3. Definições → Dispositivos e serviços → **Adicionar integração** → **Iris Care**.
 4. Adiciona o cartão a um dashboard: editar o dashboard → **Adicionar cartão** → **Iris Care**, ou em YAML:
 
