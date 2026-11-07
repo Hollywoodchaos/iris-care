@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Iris 维护",
+        "description": "家庭、汽车和设备维护追踪。点击“提交”即可安装。"
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Iris 维护已安装。"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "已逾期"
+      },
+      "due_soon": {
+        "name": "即将到期"
+      },
+      "on_track": {
+        "name": "正常"
+      },
+      "parts_to_reorder": {
+        "name": "需补货的配件"
+      },
+      "next_due": {
+        "name": "下一项任务"
+      },
+      "warranty_expiring": {
+        "name": "保修即将到期"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "手机通知",
+        "description": "每天在所选时间，Iris 会发送一份摘要：已逾期、即将到期和快用完的内容。",
+        "data": {
+          "notify_services": "发送到",
+          "notify_time": "每日提醒时间",
+          "notify_routines": "已逾期和即将到期的任务",
+          "notify_warranties": "保修即将到期",
+          "notify_parts": "需补货的配件",
+          "notify_url": "点击时打开（可选，例如 /dashboard-casa/care）"
+        }
+      },
+      "names": {
+        "title": "手机名称",
+        "description": "为每部手机起个名字（例如 Paulo、Carla）。字段标题是手机的技术名称。卡片上会显示这个名称。"
+      }
+    }
+  }
+}

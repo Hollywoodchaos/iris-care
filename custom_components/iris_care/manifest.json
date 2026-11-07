@@ -1,0 +1,14 @@
+{
+  "domain": "iris_care",
+  "name": "Iris Care",
+  "codeowners": ["@Hollywoodchaos"],
+  "config_flow": true,
+  "dependencies": ["http", "websocket_api", "frontend"],
+  "documentation": "https://github.com/Hollywoodchaos/iris-care",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/Hollywoodchaos/iris-care/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "1.0.0"
+}

@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Iris Wartung",
+        "description": "Wartungsplaner für Haus, Auto und Geräte. Klicke auf Senden, um zu installieren."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Iris Wartung ist bereits installiert."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "Überfällig"
+      },
+      "due_soon": {
+        "name": "Bald fällig"
+      },
+      "on_track": {
+        "name": "Im Plan"
+      },
+      "parts_to_reorder": {
+        "name": "Teile nachbestellen"
+      },
+      "next_due": {
+        "name": "Nächste Aufgabe"
+      },
+      "warranty_expiring": {
+        "name": "Garantien laufen ab"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Handy-Benachrichtigungen",
+        "description": "Jeden Tag zur gewählten Uhrzeit sendet Iris eine Zusammenfassung von Überfälligem, bald Fälligem und knappen Teilen.",
+        "data": {
+          "notify_services": "Senden an",
+          "notify_time": "Uhrzeit der täglichen Meldung",
+          "notify_routines": "Überfällige und bald fällige Routinen",
+          "notify_warranties": "Garantien laufen ab",
+          "notify_parts": "Teile nachbestellen",
+          "notify_url": "Beim Antippen öffnen (optional, z. B. /dashboard-casa/care)"
+        }
+      },
+      "names": {
+        "title": "Namen der Handys",
+        "description": "Gib jedem Handy einen Namen (z. B. Paulo, Carla). Der Feldtitel ist der technische Name des Handys. Dieser Name wird auf der Karte angezeigt."
+      }
+    }
+  }
+}

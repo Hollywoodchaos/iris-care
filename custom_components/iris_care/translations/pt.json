@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Iris Care",
+        "description": "Gestor de manutenção da casa, do carro e dos equipamentos. Clica em Submeter para instalar."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "A Iris Care já está instalada."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "Em atraso"
+      },
+      "due_soon": {
+        "name": "A vencer"
+      },
+      "on_track": {
+        "name": "Em dia"
+      },
+      "parts_to_reorder": {
+        "name": "Peças a repor"
+      },
+      "next_due": {
+        "name": "Próxima tarefa"
+      },
+      "warranty_expiring": {
+        "name": "Garantias a expirar"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Avisos no telemóvel",
+        "description": "Todos os dias, à hora escolhida, a Iris envia um resumo do que está em atraso, a vencer ou a acabar.",
+        "data": {
+          "notify_services": "Enviar para",
+          "notify_time": "Hora do aviso diário",
+          "notify_routines": "Rotinas em atraso e a vencer",
+          "notify_warranties": "Garantias a expirar",
+          "notify_parts": "Peças a repor",
+          "notify_url": "Abrir ao tocar (opcional, ex.: /dashboard-casa/care)"
+        }
+      },
+      "names": {
+        "title": "Nomes dos telemóveis",
+        "description": "Dá um nome a cada telemóvel (ex.: Paulo, Carla). O título de cada campo é o nome técnico do telemóvel. É este nome que aparece no cartão."
+      }
+    }
+  }
+}

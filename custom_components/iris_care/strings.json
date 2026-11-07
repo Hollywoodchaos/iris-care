@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Iris Maintenance",
+        "description": "Home, car and equipment maintenance tracker. Click Submit to install."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Iris Maintenance is already installed."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "Overdue"
+      },
+      "due_soon": {
+        "name": "Due soon"
+      },
+      "on_track": {
+        "name": "On track"
+      },
+      "parts_to_reorder": {
+        "name": "Parts to reorder"
+      },
+      "next_due": {
+        "name": "Next task"
+      },
+      "warranty_expiring": {
+        "name": "Warranties expiring"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Phone notifications",
+        "description": "Every day at the chosen time Iris sends a summary of what is overdue, due soon or running out.",
+        "data": {
+          "notify_services": "Send to",
+          "notify_time": "Daily notification time",
+          "notify_routines": "Overdue and due-soon routines",
+          "notify_warranties": "Warranties expiring",
+          "notify_parts": "Parts to reorder",
+          "notify_url": "Open on tap (optional, e.g. /dashboard-casa/care)"
+        }
+      },
+      "names": {
+        "title": "Phone names",
+        "description": "Give each phone a name (e.g. Paulo, Carla). The field title is the phone's technical name. This is the name shown on the card."
+      }
+    }
+  }
+}

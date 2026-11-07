@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Iris Manutenzione",
+        "description": "Gestione della manutenzione di casa, auto e apparecchi. Premi Invia per installare."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Iris Manutenzione è già installato."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "In ritardo"
+      },
+      "due_soon": {
+        "name": "In scadenza"
+      },
+      "on_track": {
+        "name": "In regola"
+      },
+      "parts_to_reorder": {
+        "name": "Ricambi da riordinare"
+      },
+      "next_due": {
+        "name": "Prossima attività"
+      },
+      "warranty_expiring": {
+        "name": "Garanzie in scadenza"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Notifiche sul telefono",
+        "description": "Ogni giorno all'ora scelta Iris invia un riepilogo di ciò che è in ritardo, in scadenza o in esaurimento.",
+        "data": {
+          "notify_services": "Invia a",
+          "notify_time": "Ora dell'avviso giornaliero",
+          "notify_routines": "Routine in ritardo e in scadenza",
+          "notify_warranties": "Garanzie in scadenza",
+          "notify_parts": "Ricambi da riordinare",
+          "notify_url": "Apri al tocco (facoltativo, es. /dashboard-casa/care)"
+        }
+      },
+      "names": {
+        "title": "Nomi dei telefoni",
+        "description": "Dai un nome a ogni telefono (es. Paulo, Carla). Il titolo del campo è il nome tecnico del telefono. È il nome mostrato sulla scheda."
+      }
+    }
+  }
+}

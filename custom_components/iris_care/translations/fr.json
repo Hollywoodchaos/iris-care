@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Iris Maintenance",
+        "description": "Suivi de la maintenance de la maison, de la voiture et des équipements. Clique sur Valider pour installer."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Iris Maintenance est déjà installé."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "En retard"
+      },
+      "due_soon": {
+        "name": "Bientôt"
+      },
+      "on_track": {
+        "name": "À jour"
+      },
+      "parts_to_reorder": {
+        "name": "Pièces à recommander"
+      },
+      "next_due": {
+        "name": "Prochaine tâche"
+      },
+      "warranty_expiring": {
+        "name": "Garanties bientôt expirées"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Notifications sur le téléphone",
+        "description": "Chaque jour à l'heure choisie, Iris envoie un résumé de ce qui est en retard, bientôt dû ou en rupture.",
+        "data": {
+          "notify_services": "Envoyer à",
+          "notify_time": "Heure de l'alerte quotidienne",
+          "notify_routines": "Routines en retard et bientôt dues",
+          "notify_warranties": "Garanties bientôt expirées",
+          "notify_parts": "Pièces à recommander",
+          "notify_url": "Ouvrir au toucher (facultatif, ex. /dashboard-casa/care)"
+        }
+      },
+      "names": {
+        "title": "Noms des téléphones",
+        "description": "Donne un nom à chaque téléphone (ex. Paulo, Carla). Le titre du champ est le nom technique du téléphone. C'est ce nom qui s'affiche sur la carte."
+      }
+    }
+  }
+}

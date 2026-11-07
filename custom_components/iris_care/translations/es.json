@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Iris Mantenimiento",
+        "description": "Seguimiento del mantenimiento de la casa, el coche y los equipos. Pulsa Enviar para instalar."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Iris Mantenimiento ya está instalado."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "Atrasadas"
+      },
+      "due_soon": {
+        "name": "Próximas"
+      },
+      "on_track": {
+        "name": "Al día"
+      },
+      "parts_to_reorder": {
+        "name": "Piezas a reponer"
+      },
+      "next_due": {
+        "name": "Próxima tarea"
+      },
+      "warranty_expiring": {
+        "name": "Garantías por vencer"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Notificaciones en el móvil",
+        "description": "Cada día a la hora elegida, Iris envía un resumen de lo atrasado, lo próximo y lo que se acaba.",
+        "data": {
+          "notify_services": "Enviar a",
+          "notify_time": "Hora del aviso diario",
+          "notify_routines": "Rutinas atrasadas y próximas",
+          "notify_warranties": "Garantías por vencer",
+          "notify_parts": "Piezas a reponer",
+          "notify_url": "Abrir al tocar (opcional, p. ej. /dashboard-casa/care)"
+        }
+      },
+      "names": {
+        "title": "Nombres de los móviles",
+        "description": "Da un nombre a cada móvil (p. ej. Paulo, Carla). El título del campo es el nombre técnico del móvil. Es el nombre que se muestra en la tarjeta."
+      }
+    }
+  }
+}

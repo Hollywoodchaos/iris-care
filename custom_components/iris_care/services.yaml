@@ -1,0 +1,69 @@
+add_equipment:
+  fields:
+    name: {required: true, example: "MG S9", selector: {text: }}
+    location: {example: "Garagem", selector: {text: }}
+    category: {example: "Carro", selector: {text: }}
+    brand: {selector: {text: }}
+    model: {selector: {text: }}
+    serial: {selector: {text: }}
+    notes: {selector: {text: {multiline: true}}}
+    purchased: {description: "Data de compra", selector: {date: }}
+    installed: {description: "Data de instalação", selector: {date: }}
+    warranty_months: {description: "Meses de garantia a contar da compra (ex.: 36)", selector: {number: {min: 0, max: 240, mode: box}}}
+    store: {description: "Onde foi comprado", selector: {text: }}
+    order_number: {selector: {text: }}
+    phone: {selector: {text: }}
+    email: {selector: {text: }}
+add_part:
+  fields:
+    name: {required: true, example: "Filtro de água", selector: {text: }}
+    stock: {example: 2, selector: {number: {min: 0, max: 999, mode: box}}}
+    reorder_at: {example: 1, selector: {number: {min: 0, max: 999, mode: box}}}
+    part_number: {selector: {text: }}
+    equipment: {description: "Nome ou id do equipamento", selector: {text: }}
+add_routine:
+  fields:
+    name: {required: true, example: "Substituir filtro de água", selector: {text: }}
+    equipment: {description: "Nome ou id do equipamento", selector: {text: }}
+    schedule:
+      required: true
+      description: "Ex.: {type: interval, every: 6, unit: months} | {type: months, months: [4, 10]} | {type: date, date: '2027-04-15', repeat: yearly} | {type: clock_change, which: [spring, autumn]}"
+      selector: {object: }
+    last_done: {selector: {date: }}
+    parts:
+      description: "Lista de peças usadas, ex.: [{part: 'Filtro de água', qty: 1}]"
+      selector: {object: }
+    remind:
+      description: "Aviso no telemóvel até ser feita. Ex.: {time: '08:00', repeat_min: 60, until: '22:00'}"
+      selector: {object: }
+    notify_to:
+      description: "Telemóveis que recebem os avisos desta rotina, ex.: [notify.mobile_app_telemovel_vicente]. Vazio = todos os escolhidos em Configurar."
+      selector: {object: }
+complete:
+  fields:
+    routine: {required: true, description: "Nome ou id da rotina", selector: {text: }}
+    date: {selector: {date: }}
+    cost: {selector: {number: {min: 0, max: 100000, step: 0.01, mode: box}}}
+    notes: {selector: {text: }}
+    parts:
+      description: "Opcional: substitui as peças da rotina. Ex.: [{part: 'Filtro', qty: 1}]"
+      selector: {object: }
+undo:
+  fields:
+    routine: {description: "Anula o último registo desta rotina", selector: {text: }}
+    history_id: {description: "Ou o id de um registo específico", selector: {text: }}
+snooze:
+  fields:
+    routine: {required: true, selector: {text: }}
+    days: {required: true, description: "0 cancela o adiamento", selector: {number: {min: 0, max: 365, mode: box}}}
+set_paused:
+  fields:
+    routine: {required: true, selector: {text: }}
+    paused: {required: true, selector: {boolean: }}
+adjust_stock:
+  fields:
+    part: {required: true, selector: {text: }}
+    delta: {description: "Somar/subtrair ao stock", selector: {number: {min: -999, max: 999, mode: box}}}
+    set_to: {description: "Ou definir o stock exato", selector: {number: {min: 0, max: 999, mode: box}}}
+notify_now:
+  description: "Envia já o aviso (para testar) para os telemóveis escolhidos em Configurar."
