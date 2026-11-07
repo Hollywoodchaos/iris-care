@@ -22,8 +22,15 @@ You tell Iris Care what you own (the boiler, the car, the smoke detectors, the s
 ## Install
 
 ### With HACS (recommended)
-1. HACS → ⋮ → **Custom repositories** → add `https://github.com/Hollywoodchaos/iris-care`, category **Integration**.
-2. Download **Iris Care** and restart Home Assistant.
+
+<p align="center">
+  <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Hollywoodchaos&repository=iris-care&category=integration"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open this repository in HACS"></a>
+</p>
+
+Press the button above, or add the repository by hand: HACS → ⋮ → **Custom repositories** → `https://github.com/Hollywoodchaos/iris-care`, category **Integration**. Then:
+
+1. Download **Iris Care** in HACS.
+2. Restart Home Assistant.
 3. Settings → Devices & services → **Add integration** → **Iris Care**.
 4. Add the card to a dashboard: edit the dashboard → **Add card** → **Iris Care**, or in YAML:
 
