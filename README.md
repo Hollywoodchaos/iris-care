@@ -4,7 +4,7 @@
 
 🇵🇹 [Versão em português](README.pt.md)
 
-<p align="center"><img src="docs/care-list.png" width="320" alt="Iris Care card"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Hollywoodchaos/iris-care/main/docs/care-list.png" width="320" alt="Iris Care card"></p>
 
 Built by [Eletro Solar Basto](https://github.com/Hollywoodchaos). Iris Care is **Free and open source**; **Iris Care Pro** adds extra packs and features (see [Free vs Pro](#free-vs-pro)).
 
@@ -112,11 +112,11 @@ Schedule formats:
 
 ## Free vs Pro
 
-<p align="center"><img src="docs/free-vs-pro.png" width="720" alt="Free vs Pro comparison"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Hollywoodchaos/iris-care/main/docs/free-vs-pro.png" width="720" alt="Free vs Pro comparison"></p>
 
 The Free edition is complete and ready to use. **Iris Care Pro** adds the ready packs for the car, heating and gas, air conditioning and **solar panels and batteries** (made by a solar installer), warranties with an early warning, invoice QR scan with the Iris Despesas link, and phone reminders per routine.
 
-<p align="center"><img src="docs/care-packs-free.png" width="300" alt="Packs screen in Free, Pro packs locked"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Hollywoodchaos/iris-care/main/docs/care-packs-free.png" width="300" alt="Packs screen in Free, Pro packs locked"></p>
 
 <p align="center">
   <a href="https://ko-fi.com/s/b061a23005"><img src="https://img.shields.io/badge/Get%20Iris%20Care%20Pro-on%20Ko--fi-FF5E5B?logo=ko-fi&logoColor=white&style=for-the-badge" alt="Get Pro on Ko-fi"></a>
