@@ -4,7 +4,7 @@
 
 🇬🇧 [English version](README.md)
 
-<p align="center"><img src="https://raw.githubusercontent.com/Hollywoodchaos/iris-care/main/docs/care-list.png" width="320" alt="Cartão Iris Care"></p>
+<p align="center"><img src="docs/care-list.png" width="320" alt="Cartão Iris Care"></p>
 
 Feito pela [Eletro Solar Basto](https://github.com/Hollywoodchaos). A Iris Care é **gratuita e de código aberto**; a **Iris Care Pro** acrescenta pacotes e funções extra (ver [Free vs Pro](#free-vs-pro)).
 
@@ -23,16 +23,13 @@ Dizes à Iris Care o que tens (a caldeira, o carro, os detetores de fumo, o inve
 
 ### Com HACS (recomendado)
 
-<p align="center">
-  <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Hollywoodchaos&repository=iris-care&category=integration"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open this repository in HACS"></a>
-</p>
+<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Hollywoodchaos&repository=iris-care&category=integration" target="_blank"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open in HACS"></a>
 
-Carrega no botão acima, ou adiciona o repositório à mão: HACS → ⋮ → **Repositórios personalizados** → `https://github.com/Hollywoodchaos/iris-care`, categoria **Integração**. Depois:
+Ou procura **Iris Care** no HACS. Se ainda não aparecer: HACS → ⋮ → **Repositórios personalizados** → `https://github.com/Hollywoodchaos/iris-care`, categoria **Integração**.
 
-1. Descarrega a **Iris Care** no HACS.
-2. Reinicia o Home Assistant.
-3. Definições → Dispositivos e serviços → **Adicionar integração** → **Iris Care**.
-4. Adiciona o cartão a um dashboard: editar o dashboard → **Adicionar cartão** → **Iris Care**, ou em YAML:
+1. Descarrega a **Iris Care** e reinicia o Home Assistant.
+2. Definições → Dispositivos e serviços → **Adicionar integração** → **Iris Care**.
+3. Adiciona o cartão a um dashboard: editar o dashboard → **Adicionar cartão** → **Iris Care**, ou em YAML:
 
 ```yaml
 type: custom:iris-care-card
@@ -110,11 +107,11 @@ Formatos de agenda:
 
 ## Free vs Pro
 
-<p align="center"><img src="https://raw.githubusercontent.com/Hollywoodchaos/iris-care/main/docs/free-vs-pro.png" width="720" alt="Comparação Free vs Pro"></p>
+<p align="center"><img src="docs/free-vs-pro.png" width="720" alt="Comparação Free vs Pro"></p>
 
 A edição Free é completa e pronta a usar. A **Iris Care Pro** acrescenta os pacotes prontos do carro, aquecimento e gás, ar condicionado e **painéis solares e baterias** (feito por um instalador solar), garantias com aviso antecipado, leitura do QR da fatura com ligação ao Iris Despesas e avisos no telemóvel por rotina.
 
-<p align="center"><img src="https://raw.githubusercontent.com/Hollywoodchaos/iris-care/main/docs/care-packs-free.png" width="300" alt="Ecrã de pacotes no Free, pacotes Pro bloqueados"></p>
+<p align="center"><img src="docs/care-packs-free.png" width="300" alt="Ecrã de pacotes no Free, pacotes Pro bloqueados"></p>
 
 <p align="center">
   <a href="https://ko-fi.com/s/b061a23005"><img src="https://img.shields.io/badge/Get%20Iris%20Care%20Pro-on%20Ko--fi-FF5E5B?logo=ko-fi&logoColor=white&style=for-the-badge" alt="Get Pro on Ko-fi"></a>
